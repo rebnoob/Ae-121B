@@ -333,18 +333,9 @@ if __name__ == "__main__":
     avg_isp_n2o4 = np.nanmax(results_n2o4_n2h4['Isp'], axis=1).mean()
     
     print(f"""
-1. PERFORMANCE:
    - LOX/CH4 average max Isp: {avg_isp_lox:.1f} s
    - N2O4/N2H4 average max Isp: {avg_isp_n2o4:.1f} s
    - {"LOX/CH4" if avg_isp_lox > avg_isp_n2o4 else "N2O4/N2H4"} provides higher specific impulse capability.
-
-2. OPTIMAL O/F RATIOS:
-   - LOX/CH4: Peak Isp typically occurs below stoichiometric (fuel-rich)
-   - N2O4/N2H4: Peak Isp also typically fuel-rich
-
-3. PRACTICAL CONSIDERATIONS:
-   - LOX/CH4: Higher Isp, can be produced from lunar/Mars resources
-   - N2O4/N2H4: Storable at room temperature, proven flight heritage (Apollo)
 """)
     
     print("=" * 70)
