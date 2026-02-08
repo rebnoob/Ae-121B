@@ -1,19 +1,3 @@
-"""
-Ammonia Dissociation Equilibrium Analysis
-
-This script analyzes the equilibrium composition of ammonia (NH3) as a function of
-temperature at two pressures (1 atm and 10 atm).
-
-The dissociation reaction is: 2 NH3(g) ⇌ N2(g) + 3 H2(g)
-
-Based on the Cantera equil.m demo concept:
-- Set initial composition to pure NH3
-- Use equilibrate('TP') for constant temperature and pressure equilibration
-- Extract mole fractions of NH3, N2, H2
-
-Equilibration method: 'TP' since temperature and pressure are specified.
-"""
-
 import cantera as ct
 import numpy as np
 import matplotlib.pyplot as plt
@@ -168,27 +152,6 @@ plt.show()
 # ============================================================================
 # Summary
 # ============================================================================
-
-print("\n" + "=" * 70)
-print("SUMMARY")
-print("=" * 70)
-print("""
-Key observations from the ammonia dissociation equilibrium:
-
-1. TEMPERATURE EFFECT:
-   - Dissociation increases with temperature (endothermic reaction)
-   - At low T (~300K): NH₃ dominates, N₂ and H₂ are negligible
-   - At high T (~1650K): Significant dissociation into N₂ and H₂
-
-2. PRESSURE EFFECT:
-   - Higher pressure suppresses dissociation (Le Chatelier's principle)
-   - 2 mol NH₃ → 4 mol products (N₂ + 3H₂)
-   - At any T, 10 atm shows more NH₃ than 1 atm
-
-3. STOICHIOMETRY CHECK:
-   - The ratio of N₂:H₂ mole fractions should be approximately 1:3
-   - This confirms the reaction: 2 NH₃ → N₂ + 3 H₂
-""")
 
 # Stoichiometry check at high temperature
 T_check_idx = -1  # Last temperature point

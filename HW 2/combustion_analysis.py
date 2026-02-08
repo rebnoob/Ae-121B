@@ -1,15 +1,3 @@
-"""
-Rocket Propellant Combustion Analysis
-
-Analyzes LOX/CH4 (SpaceX Raptor) and N2O4/N2H4 (Apollo-style) propellant combinations.
-Calculates molecular weight, combustion temperature, ratio of specific heats (γ),
-characteristic velocity (c*), and ideal specific impulse (Isp) as functions of O/F ratio.
-
-Based on the Cantera equil.m demo - uses HP equilibration for adiabatic combustion.
-
-Equilibration method: 'HP' (constant enthalpy and pressure) with robust solver.
-"""
-
 import cantera as ct
 import numpy as np
 import matplotlib.pyplot as plt
