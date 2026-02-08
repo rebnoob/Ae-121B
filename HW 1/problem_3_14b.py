@@ -1,16 +1,3 @@
-"""
-Problem 3.14(b): Thermodynamic Properties of Ammonia (NH3)
-
-Calculate (H - H°) [kJ/mol] and S° [J/mol-K] at 1 atm for ammonia using 
-numerical integration of Cp data from the ig.thermo.xls tables.
-
-From the problem statement:
-- Enthalpy: h(T) - h_0 = ∫[T0 to T] Cp dT   (Eq. 3)
-- Entropy: S(T,P) = ∫[T0 to T] Cp/T dT + s_i0   (Eq. 5, at constant P=P0)
-
-For an ideal gas at 1 atm (P = P0), the entropy simplifies since P/P0 = 1.
-"""
-
 import pandas as pd
 import numpy as np
 from scipy import integrate

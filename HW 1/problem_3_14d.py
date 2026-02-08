@@ -1,12 +1,3 @@
-"""
-Problem 3.14(d): Entropy Plot
-
-Plot entropy vs dissociation fraction at T = 500 K showing:
-i)   Linear mixing rule (Term 1 only)
-ii)  Linear mixing + entropy of mixing (Term 1 + Term 2)
-iii) Total entropy at 10 atm (all terms)
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 from thermo_utils import (load_entropy_data, get_entropy_at_T,

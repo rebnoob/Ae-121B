@@ -1,9 +1,3 @@
-"""
-Problem 3.14(f): Gibbs Free Energy
-
-Calculate Gibbs function for NH3/N2/H2 mixture and identify equilibrium composition.
-"""
-
 import numpy as np
 from thermo_utils import (load_thermo_data, get_entropy_at_T, get_enthalpy_at_T,
                           calculate_mole_fractions, R)
