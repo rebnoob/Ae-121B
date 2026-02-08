@@ -336,7 +336,7 @@ if __name__ == "__main__":
    - LOX/CH4 average max Isp: {avg_isp_lox:.1f} s
    - N2O4/N2H4 average max Isp: {avg_isp_n2o4:.1f} s
    - {"LOX/CH4" if avg_isp_lox > avg_isp_n2o4 else "N2O4/N2H4"} provides higher specific impulse capability.
-""")
+    """)
     
     print("=" * 70)
     print("ANALYSIS COMPLETE")
