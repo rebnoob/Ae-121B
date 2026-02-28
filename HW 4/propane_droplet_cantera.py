@@ -1,17 +1,4 @@
 #!/usr/bin/env python3
-"""
-Propane droplet combustion sweep using Python + Cantera.
-
-Computes:
-    - fuel mass burning rate, mdot_F [kg/s]
-    - fuel vapor mass fraction at surface, Y_F,s [-]
-    - droplet surface temperature, T_s [K]
-    - flame temperature, T_f [K]
-    - flame radius, r_f [m]
-
-for ambient temperatures from 300 K to 1000 K at 1 atm and 10 atm.
-"""
-
 from __future__ import annotations
 
 import math

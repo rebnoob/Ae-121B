@@ -1,23 +1,4 @@
 #!/usr/bin/env python3
-"""
-Methane droplet combustion sweep using Python + Cantera.
-
-This script computes:
-    - fuel mass burning rate, mdot_F [kg/s]
-    - fuel vapor mass fraction at surface, Y_F,s [-]
-    - droplet surface temperature, T_s [K]
-    - flame temperature, T_f [K]
-    - flame radius, r_f [m]
-
-for ambient temperatures from 300 K to 1000 K at 1 atm and 10 atm.
-
-Model notes:
-    - Uses a 100 micron methane droplet.
-    - Uses the classical algebraic droplet-combustion closure with Cantera
-      properties and adiabatic flame temperature from Cantera equilibrium.
-    - Uses gri30.yaml (modern replacement for gri30.cti).
-"""
-
 from __future__ import annotations
 
 import math
